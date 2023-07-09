@@ -1,4 +1,4 @@
-package ClassAndObject.NestedClass;
+package ClassAndObject.Objects;
 
 public class Point {
 
