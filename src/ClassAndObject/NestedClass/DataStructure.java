@@ -1,5 +1,9 @@
 package ClassAndObject.NestedClass;
 
+/*
+ * Takeaways:
+ * - This is potential use case of the inner class.
+ */
 public class DataStructure {
 
   // Create an array
