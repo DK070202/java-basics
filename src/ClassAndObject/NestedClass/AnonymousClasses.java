@@ -1,5 +1,9 @@
 package ClassAndObject.NestedClass;
 
+/*
+ * Takeaways:
+ * - This is more like expression in spite.
+ */
 public class AnonymousClasses {
 
   interface HelloWorld {
