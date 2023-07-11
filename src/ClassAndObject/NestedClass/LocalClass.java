@@ -4,7 +4,9 @@ package ClassAndObject.NestedClass;
  * Takeaway: The local class can only access those variable inside scope which are final or effective
  * final, means that after assignment of the variable it's not changeling.
  *
- *  After JDK 8 we can access the parameters passed in local class.
+ *  After JDK 8 we can access the parameters passed in function to local class.
+ *
+ *  Local class can be also create inside for loop or in if else clause.
  */
 public class LocalClass {
 
@@ -47,6 +49,20 @@ public class LocalClass {
     if (myNumber2.getNumber() == null) System.out.println(
       "Second number is invalid"
     ); else System.out.println("Second number is " + myNumber2.getNumber());
+  }
+
+  public void greetInEnglish() {
+    interface HelloThere {
+      public void greet();
+    }
+    class EnglishHelloThere implements HelloThere {
+
+      public void greet() {
+        System.out.println("Hello " + "Dhruvin");
+      }
+    }
+    HelloThere myGreeting = new EnglishHelloThere();
+    myGreeting.greet();
   }
 
   public static void main(String... args) {
