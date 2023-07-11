@@ -1,4 +1,4 @@
-package ClassAndObject;
+package ClassAndObject.Constructor;
 
 /**
  * VarArgs
