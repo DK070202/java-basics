@@ -55,8 +55,8 @@ public class Bicycle {
     return gear;
   }
 
-  public void setGear(int newValue) {
-    gear = newValue;
+  public void setGear(int gear) {
+    this.gear = gear;
   }
 
   public int getSpeed() {
