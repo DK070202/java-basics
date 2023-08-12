@@ -1,8 +1,9 @@
 package ClassAndObject.NestedClass;
 
-import ClassAndObject.Objects.Rect;
 import java.util.ArrayList;
 import java.util.List;
+
+import ClassAndObject.Objects.Rect;
 
 public class Filter<T> {
 
@@ -15,10 +16,9 @@ public class Filter<T> {
 
     Filter<Rect> filter = new Filter<Rect>();
     filter.performFilter(
-      recta,
-      p -> p.getArea() >= 300,
-      p -> System.out.println(p)
-    );
+        recta,
+        p -> p.getArea() >= 300,
+        p -> System.out.println(p));
   }
 
   public abstract interface Criteria<T> {
@@ -30,10 +30,9 @@ public class Filter<T> {
   }
 
   public void performFilter(
-    List<T> inputs,
-    Criteria<T> criteria,
-    OnConfirmCriteria<T> onConfirmCriteria
-  ) {
+      List<T> inputs,
+      Criteria<T> criteria,
+      OnConfirmCriteria<T> onConfirmCriteria) {
     for (T t : inputs) {
       if (criteria.performFilter(t)) {
         onConfirmCriteria.onMatch(t);
