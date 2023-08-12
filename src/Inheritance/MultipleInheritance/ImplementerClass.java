@@ -11,8 +11,10 @@ package Inheritance.MultipleInheritance;
 public class ImplementerClass implements Interface1, Interface2 {
 
   @Override
-  public void doThing() {}
+  public void doThing() {
+  } /// Try to comment this and then un-comments this.
 
   @Override
-  public void doSomethingBetter() {}
+  public void doSomethingBetter() {
+  }
 }
